@@ -1,8 +1,38 @@
-# LambdaGrid Dashboard
+# What is LambdaGrid Dashboard?
 
-Build a professional customer-facing login web dashboard with just deterministic functions.
+LambdaGrid Dashboard is "frontend applications as a service." It's open source infrastructure which allows frontend developers to build complex professional web GUIs while only writing deterministic functions in JavaScript and using pre-existing UI widgets.
 
-In more detail, LambdaGrid Dashboard is open source infrastructure that allows software engineers to build an enterprise dashboard single-page application with speed and correctness. It's a new opinionated framework to allow professional frontend engineers to not only do their best work, but also have it be appreciated by the rest of the team.
+LambdaGrid Dashboard helps developers produce professional single-page JavaScript applications that run in the web browser and interact with your API server. "Dashboard" is a vague term that can indicate anything from a data visualization interface, to a customer-facing web application, to an internal web portal. LambdaGrid Dashboard helps with all these use cases.
+
+## Who should and should not love using LambdaGrid Dashboard?
+
+Developers who should love LambdaGrid Dashboard would fit some of the following characteristics:
+- Are professionally accountable for delivering a frontend application to paying customers
+- Want to trust their coworkers to not mess up the code base
+- Consider themselves detail-oriented product problem solvers
+- Want to just focus on writing application logic and business logic, and do not want to manage continuous integration, delivery & deployment
+- Are tired of their current code base either being insufficiently tested, being insufficiently documented, being difficult to extend or develop, or just not working
+- Is disinterested in building the infrastructure of a frontend, including API request dispatchers, routing, data persistence to local storage, and JS console error monitoring
+- Wants all their coworkers to write great tests, with a zero configuration testing solution for unit tests, React component browser rendering tests, and end-to-end tests including user events and API interactions
+
+Developers who should NOT love LambdaGrid would fit some of the following characteristics:
+- Are interested in building and configuring an entire professional frontend application from scratch
+- Determined to host and manage deployments themselves
+- Do not want a single-page JavaScript application that runs in the web browser
+
+## What use cases are appropriate and inappropriate for LambdaGrid Dashboard?
+
+Appropriate use cases include:
+- A console, app, portal, or dashboard that is customer-facing or an internal tool
+- A frontend app that should interact with an API server
+- A single-page JS app which includes common web UI elements such as a user login and forget password flow, a homepage to show summary data, ability to perform CRUD operations on lists of records, and user management to change passwords, update billing information, and invite team members
+
+Inappropriate use cases include:
+- Games
+- Word processors, spreadsheets, and presentation slide deck programs
+- Code IDEs
+- Mobile
+- Drawing and image processing
 
 # What makes LambdaGrid different for software engineers?
 
@@ -27,7 +57,7 @@ All source code inside a LambdaGrid Dashboard application is deterministic funct
 
 ### Library of Bootstrap-compatible React components
 
-Many engineers want to write as little HTML and CSS as possible. To that effect, LambdaGrid has open source React components that are available for free to all users. The components are all Bootstrap-compatible, so you can upload a custom Bootstrap theme to make your application look exactly the way you'd like while leveraging Bootstrap's cross-browser compatibility and performance benefits.
+Many engineers want to write as little HTML and CSS as possible. To that effect, LambdaGrid has open source React components that are available for free to all users. The components are all Bootstrap-compatible, so you can upload a custom Bootstrap theme to make your application look exactly the way you'd like while leveraging Bootstrap's cross-browser compatibility and performance benefits. If desired, an engineer can build an entire app without writing any custom HTML or CSS and just adding their own custom Bootstrap theme.
 
 ## Emphasis on trustworthiness
 
@@ -37,13 +67,11 @@ LambdaGrid Dashboard is designed to produce applications that earn their develop
 
 ### Tests that encourage other engineers to write more tests
 
-LambdaGrid provides testing solutions, both at a lower level for all deterministic functions at at a higher level to create end-to-end tests, requiring zero configuration or installations. We designed LambdaGrid testing solutions to be so delightful that all your coworkers will write tests, leading to your dashboard application's code base being healthier and more stable.
-
-We want engineers to be excited to write more tests, and even more excited about what LambdaGrid does to encourage their coworkers to write tests.
+LambdaGrid provides testing solutions, both at a lower level for all deterministic functions and at a higher level to create end-to-end tests, requiring zero configuration or installations. We want engineers to be excited to write more tests, and even more excited about what LambdaGrid does to encourage their coworkers to write tests.
 
 ### Continuous integration, delivery & deployment
 
-LambdaGrid can manage all continuous integration, delivery & deployment for your team. This includes code changes in not only your own source code of deterministic functions, but also your tests. LambdaGrid manages all the complexities and headaches of a continuous integration, delivery & deployment pipeline so engineers can focus on staying in flow building applications.
+LambdaGrid can manage all continuous integration, delivery & deployment for your team. This includes code changes in not only your own source code of deterministic functions, but also your tests. LambdaGrid manages all the complexities of a continuous integration, delivery & deployment pipeline so engineers can focus on staying in flow building applications.
 
 ### Managed updates to the LambdaGrid infrastructure
 
@@ -57,7 +85,7 @@ Most engineers already have a dashboard code base, and not every engineer is rea
 
 ### How to switch to LambdaGrid Dashboard
 
-You can build 80% of your dashboard in one week with LambdaGrid, whether you're building a completely new dashboard or migrating an existing dashboard from an old o code base. We recommend new users to build their dashboards first with declaring the application state structure, then by declaring the routing strategy, then by creating pages for each route, and finally by adding user interactions. See more [here](#getting-started) to see how to get started.
+You can build 80% of your dashboard in one week with LambdaGrid, whether you're building a completely new dashboard or migrating an existing dashboard from an old code base. We recommend new users to build their dashboards first by declaring the routing strategy, then by creating pages for each route, and finally by adding user interactions. See more [here](#getting-started) to see how to get started.
 
 ### How to switch from LambdaGrid Dashboard
 
